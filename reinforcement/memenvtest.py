@@ -2,48 +2,11 @@ import gymnasium
 from gymnasium import spaces
 from gymnasium.spaces import (
     Box,
-    Dict,
-    Discrete,
-    Graph,
-    MultiBinary,
-    MultiDiscrete,
-    Sequence,
-    Text,
-    Tuple,
 )
-
-from sentence_transformers import SentenceTransformer
-from transformers import AutoTokenizer, RobertaTokenizer, RobertaForSequenceClassification
-import numpy as np
-import evaluate
 import torch
-import random
-from itertools import combinations
-from tqdm import tqdm
-from torch.nn import functional as F
-
-from models import build_model, build_tokenizer
-from common import mk_parser
-from tasks import load_task
-
 from tasks.base import obtain_memory_icv
-
 from utils.llm_layers import add_icv_layers, remove_icv_layers
-from utils.forward_tracer import ForwardTrace
-from utils.forward_tracer import ForwardTracer
 
-
-from LIVE.inference import generate_answers, get_icv
-
-
-from parlai.utils.safety import OffensiveLanguageClassifier
-
-
-import torch
-import torch.nn as nn
-import torch.optim as optim
-import torch.nn.functional as F
-from torch.utils.data import DataLoader, Dataset
 
 
 def get_inverse_weight(chunk_index, offset=1):
