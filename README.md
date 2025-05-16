@@ -10,13 +10,13 @@ To run DSEM on the GYAFC dataset, you must first obtain permission for using the
 ### Environment Setup
 1. Create a new Conda environment:
    ```bash
-   conda create -n mem_steer python=3.9
+   conda create -n dsem python=3.9
    ```
 2. Load and activate the environment:
    ```bash
    module load Anaconda3
    source activate
-   conda activate mem_steer
+   conda activate dsem
    ```
 3. Install dependencies:
     ```bash
