@@ -1,4 +1,4 @@
-# Instructions for Running DSEM
+# [ACL 25 Findings] Dynamic Steering With Episodic Memory For Large Language Models
 
 ## Prerequisites
 
@@ -74,6 +74,3 @@ python pytorch_a2c_ppo_acktr_gail/evaluate_memory_test.py \
     --n_neighbor_chunks 9
 ```
 
-## Notes
-- Ensure that all required dependencies are installed in the `mem_steer` environment.
-- Replace paths and parameters as necessary based on your specific setup and requirements.
