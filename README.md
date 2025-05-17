@@ -1,5 +1,5 @@
 # [ACL 25 Findings] Dynamic Steering With Episodic Memory For Large Language Models
-This is the codebase for the paper Dynamic Steering With Episodic Memory For Large Language Models published at Findings of ACL 2025!
+This is the codebase for the [paper](https://openreview.net/forum?id=XJIYS7s6Il&referrer=%5Bthe%20profile%20of%20Van%20Dai%20Do%5D(%2Fprofile%3Fid%3D~Van_Dai_Do1)) Dynamic Steering With Episodic Memory For Large Language Models published at Findings of ACL 2025!
 
 ![DSEM](imgs/DSEM.png)
 
